@@ -3,7 +3,8 @@ import React from 'react';
 export default function Toolbar({ searchQuery, onSearchChange, expandAll, onToggleExpand, fileStats }) {
   return (
     <div className="border-b border-gray-200 p-6 bg-gradient-to-r from-gray-50 to-gray-100">
-      <div className="flex gap-3 flex-wrap items-center mb-4">
+      <div className="flex gap-3 flex-wrap items-center mb-4 absolute top-0 left-0">
+      {/* [BUG - Layers] Absolute positioning without proper parent, misaligns toolbar. [FIX: Remove 'absolute top-0 left-0'] */}
         <div className="flex-1 min-w-[250px] relative">
           <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -18,8 +19,10 @@ export default function Toolbar({ searchQuery, onSearchChange, expandAll, onTogg
         </div>
         <button 
           onClick={onToggleExpand}
-          className="px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105"
+          className="px-5 py-2 bg-gradient-to-r from-blue-5 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-gray-100 rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105"
         >
+        {/* [BUG - Typo] 'bg-blue-5' doesn't exist (should be bg-blue-500). [FIX: bg-blue-500] */}
+        {/* [BUG - Color & Contrast] 'text-gray-100' on broken background is nearly invisible. [FIX: text-white] */}
           {expandAll ? '📦 Collapse All' : '📂 Expand All'}
         </button>
       </div>

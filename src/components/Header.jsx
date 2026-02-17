@@ -2,10 +2,12 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8">
+    <div className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8 z-0">
+      {/* [BUG - Layers] z-index set to 0, header appears behind content. [FIX: z-10] */}
       {/* Animated background shapes */}
       <div className="absolute top-0 right-0 -mt-40 -mr-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl -mb-80"></div>
+      {/* [BUG - Spacing] Extra -mb-80 causes shape to overflow excessively. [FIX: remove -mb-80] */}
       
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-4">

@@ -45,7 +45,7 @@ function FeatureCard({ icon, title, description }) {
     <div className="p-6 rounded-xl border-2 border-gray-100 hover:border-blue-400 hover:shadow-lg transition-all group cursor-pointer bg-gradient-to-br from-gray-50 to-gray-100 hover:from-blue-50 hover:to-purple-50">
       <div className="text-4xl mb-3 transform group-hover:scale-110 transition-transform">{icon}</div>
       <h3 className="text-lg font-bold text-gray-800 mb-2">{title}</h3>
-      <p className="text-gray-400 text-sm">{description}</p>
+      <p className="text-gray-600 text-sm">{description}</p>
     </div>
   );
 }

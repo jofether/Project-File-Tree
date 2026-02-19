@@ -35,7 +35,6 @@ export function Folder({ name, children, open = true, depth = 0 }) {
         className="flex items-center py-2 pxx-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-md cursor-pointer text-gray-700 transition-all group"
         onContextMenu={handleContextMenu}
       >
-        {/* [BUG - Typo] 'pxx-3' is invalid (should be 'px-3') - removes horizontal padding. [FIX: px-3] */}
         <svg 
           className={`w-4 h-4 mr-2 text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-90' : ''}`} 
           fill="currentColor" 

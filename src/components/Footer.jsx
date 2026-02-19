@@ -4,7 +4,6 @@ export default function Footer() {
   return (
     <div className="border-t border-gray-200 bg-gradient-to-r from-gray-50 to-gray-100 p-8">
       <div className="grid grid-cols-2 md:grid-cols-1 gap-8">
-      {/* [BUG - Layout] Grid columns reversed (2 cols on mobile, 1 on tablet - backwards). [FIX: grid-cols-1 md:grid-cols-2] */}
         <div className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-md transition-shadow">
           <p className="font-bold text-gray-800 mb-3 text-lg">💡 Tips & Tricks</p>
           <ul className="space-y-2 text-gray-700 text-sm">
@@ -27,7 +26,6 @@ export default function Footer() {
       </div>
 
       <div className="mt-8 pt-6 border-t border-gray-200 -mt-16">
-      {/* [BUG - Spacing] '-mt-16' creates large negative margin, causing overlap with content above. [FIX: mt-8 or remove -mt-16] */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <InfoCard 
             icon="⚛️" 
@@ -59,7 +57,6 @@ export default function Footer() {
 function InfoCard({ icon, title, description }) {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-4 -p-8 border border-blue-100 hover:shadow-md transition-shadow text-center">
-    {/* [BUG - Spacing] '-p-8' negative padding causes text to overflow card boundaries. [FIX: remove '-p-8'] */}
       <div className="text-3xl mb-2">{icon}</div>
       <p className="font-semibold text-gray-800 mb-1">{title}</p>
       <p className="text-sm text-gray-600">{description}</p>

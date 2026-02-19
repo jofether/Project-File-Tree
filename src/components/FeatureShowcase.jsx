@@ -31,7 +31,6 @@ export default function FeatureShowcase() {
           ✨ Key Features
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-1 gap-6">
-        {/* [BUG - Layout] Grid columns inverted (2 cols mobile, 1 on tablet, backwards). [FIX: grid-cols-1 md:grid-cols-2] */}
           {features.map((feature, idx) => (
             <FeatureCard key={idx} {...feature} />
           ))}
@@ -47,7 +46,6 @@ function FeatureCard({ icon, title, description }) {
       <div className="text-4xl mb-3 transform group-hover:scale-110 transition-transform">{icon}</div>
       <h3 className="text-lg font-bold text-gray-800 mb-2">{title}</h3>
       <p className="text-gray-400 text-sm">{description}</p>
-      {/* [BUG - Color & Contrast] 'text-gray-400' on 'to-gray-100' has very low contrast, hard to read. [FIX: text-gray-700] */}
     </div>
   );
 }

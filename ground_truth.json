@@ -1,0 +1,155 @@
+{
+  "repository": "Project File Tree",
+  "bugs": [
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid-cols",
+      "file_modified": "src/components/FeatureShowcase.jsx",
+      "line_number": 33,
+      "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-6\">",
+      "buggy_code": "<div className=\"grid grid-cols-2 md:grid-cols-1 gap-6\">",
+      "css_selector": ".grid",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "padding",
+      "file_modified": "src/components/FileTreeNode.jsx",
+      "line_number": 35,
+      "clean_code": "className=\"flex items-center py-2 px-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-md cursor-pointer text-gray-700 transition-all group\"",
+      "buggy_code": "className=\"flex items-center py-2 pxx-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-md cursor-pointer text-gray-700 transition-all group\"",
+      "css_selector": ".folder-item",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid-cols",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 6,
+      "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-8\">",
+      "buggy_code": "<div className=\"grid grid-cols-2 md:grid-cols-1 gap-8\">",
+      "css_selector": ".grid",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 28,
+      "clean_code": "<div className=\"mt-8 pt-6 border-t border-gray-200\">",
+      "buggy_code": "<div className=\"mt-8 pt-6 border-t border-gray-200 -mt-16\">",
+      "css_selector": ".footer-section",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/Footer.jsx",
+      "line_number": 59,
+      "clean_code": "<div className=\"bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-4 border border-blue-100 hover:shadow-md transition-shadow text-center\">",
+      "buggy_code": "<div className=\"bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-4 -p-8 border border-blue-100 hover:shadow-md transition-shadow text-center\">",
+      "css_selector": ".info-card",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 5,
+      "clean_code": "<div className=\"relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8\">",
+      "buggy_code": "<div className=\"relative overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-16 px-8 z-0\">",
+      "css_selector": ".header",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/components/Header.jsx",
+      "line_number": 8,
+      "clean_code": "<div className=\"absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl\"></div>",
+      "buggy_code": "<div className=\"absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl -mb-80\"></div>",
+      "css_selector": ".shape-bottom",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "position",
+      "file_modified": "src/components/Toolbar.jsx",
+      "line_number": 6,
+      "clean_code": "<div className=\"flex gap-3 flex-wrap items-center mb-4\">",
+      "buggy_code": "<div className=\"flex gap-3 flex-wrap items-center mb-4 absolute top-0 left-0\">",
+      "css_selector": ".toolbar-controls",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "background-color",
+      "file_modified": "src/components/Toolbar.jsx",
+      "line_number": 21,
+      "clean_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
+      "buggy_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-5 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-gray-100 rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
+      "css_selector": ".submit-btn",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Toolbar.jsx",
+      "line_number": 21,
+      "clean_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
+      "buggy_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-5 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-gray-100 rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
+      "css_selector": ".submit-btn",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

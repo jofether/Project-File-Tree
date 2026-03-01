@@ -2,6 +2,7 @@
   "repository": "Project File Tree",
   "bugs": [
     {
+      "comment": "Bug #1 - grid layout reversed",
       "bug_category": "Layout",
       "bug_type": "grid-cols",
       "file_modified": "src/components/FeatureShowcase.jsx",
@@ -10,13 +11,14 @@
       "buggy_code": "<div className=\"grid grid-cols-2 md:grid-cols-1 gap-6\">",
       "css_selector": ".grid",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 192,
+        "y": -22,
+        "width": 896,
+        "height": 709
       }
     },
     {
+      "comment": "Bug #2 - padding typo (pxx-3)",
       "bug_category": "Typo",
       "bug_type": "padding",
       "file_modified": "src/components/FileTreeNode.jsx",
@@ -25,13 +27,14 @@
       "buggy_code": "className=\"flex items-center py-2 pxx-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-md cursor-pointer text-gray-700 transition-all group\"",
       "css_selector": ".folder-item",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 260,
+        "y": 977,
+        "width": 760,
+        "height": 36
       }
     },
     {
+      "comment": "Bug #3 - grid layout reversed",
       "bug_category": "Layout",
       "bug_type": "grid-cols",
       "file_modified": "src/components/Footer.jsx",
@@ -40,13 +43,14 @@
       "buggy_code": "<div className=\"grid grid-cols-2 md:grid-cols-1 gap-8\">",
       "css_selector": ".grid",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 32,
+        "y": 10,
+        "width": 1216,
+        "height": 419
       }
     },
     {
+      "comment": "Bug #4 - conflicting margin (-mt-16)",
       "bug_category": "Spacing",
       "bug_type": "margin",
       "file_modified": "src/components/Footer.jsx",
@@ -55,13 +59,14 @@
       "buggy_code": "<div className=\"mt-8 pt-6 border-t border-gray-200 -mt-16\">",
       "css_selector": ".footer-section",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 32,
+        "y": 3173,
+        "width": 1216,
+        "height": 150
       }
     },
     {
+      "comment": "Bug #5 - conflicting padding (-p-8)",
       "bug_category": "Spacing",
       "bug_type": "padding",
       "file_modified": "src/components/Footer.jsx",
@@ -70,13 +75,14 @@
       "buggy_code": "<div className=\"bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-4 -p-8 border border-blue-100 hover:shadow-md transition-shadow text-center\">",
       "css_selector": ".info-card",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 32,
+        "y": 3198,
+        "width": 389,
+        "height": 126
       }
     },
     {
+      "comment": "Bug #6 - unnecessary z-0 layer",
       "bug_category": "Layers",
       "bug_type": "z-index",
       "file_modified": "src/components/Header.jsx",
@@ -86,12 +92,13 @@
       "css_selector": ".header",
       "bounding_box": {
         "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "y": -402,
+        "width": 1280,
+        "height": 248
       }
     },
     {
+      "comment": "Bug #7 - conflicting margin (-mb-80)",
       "bug_category": "Spacing",
       "bug_type": "margin",
       "file_modified": "src/components/Header.jsx",
@@ -100,13 +107,14 @@
       "buggy_code": "<div className=\"absolute bottom-0 left-0 -mb-40 -ml-40 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl -mb-80\"></div>",
       "css_selector": ".shape-bottom",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": -160,
+        "y": -154,
+        "width": 320,
+        "height": 320
       }
     },
     {
+      "comment": "Bug #8 - absolute positioning",
       "bug_category": "Layout",
       "bug_type": "position",
       "file_modified": "src/components/Toolbar.jsx",
@@ -116,12 +124,13 @@
       "css_selector": ".toolbar-controls",
       "bounding_box": {
         "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "y": -402,
+        "width": 399,
+        "height": 38
       }
     },
     {
+      "comment": "Bug #9 - invalid color value (blue-5)",
       "bug_category": "Typo",
       "bug_type": "background-color",
       "file_modified": "src/components/Toolbar.jsx",
@@ -130,13 +139,14 @@
       "buggy_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-5 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-gray-100 rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
       "css_selector": ".submit-btn",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 262,
+        "y": -402,
+        "width": 137,
+        "height": 36
       }
     },
     {
+      "comment": "Bug #10 - text color changed to gray-100",
       "bug_category": "Color",
       "bug_type": "text-color",
       "file_modified": "src/components/Toolbar.jsx",
@@ -145,10 +155,10 @@
       "buggy_code": "className=\"px-5 py-2 bg-gradient-to-r from-blue-5 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-gray-100 rounded-lg text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105\"",
       "css_selector": ".submit-btn",
       "bounding_box": {
-        "x": 0,
-        "y": 0,
-        "width": 0,
-        "height": 0
+        "x": 262,
+        "y": -3010,
+        "width": 137,
+        "height": 36
       }
     }
   ]
